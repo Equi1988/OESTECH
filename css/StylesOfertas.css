@@ -1,0 +1,56 @@
+.ofertas {
+    padding: 60px 40px;
+    background-color: #111;
+}
+
+.estilosTitulos {
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 30px;
+    color: #00ffcc;
+}
+
+.centrado {
+    text-align: center;
+}
+
+
+.banner img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+}
+
+.banners-ofertas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner {
+    flex: 1 1 30%;
+    /* permite que ocupen igual espacio */
+    max-width: 500px;
+    /* ajustable */
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .banner img {
+        height: 180px;
+        /* un poco más bajo en mobile */
+    }

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/Styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!-- Barra superior informativa -->
+    <div class="topbar">
+        <ul class="topbar-links">
+            <li><a href="#"><i class="fas fa-store"></i> Locales</a></li>
+            <li><a href="#"><i class="fas fa-truck"></i> Envíos / Retiros</a></li>
+            <li><a href="#"><i class="fas fa-tools"></i> Servicio Técnico</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
+        </ul>
+        <div class="topbar-right">
+            <input type="text" placeholder="Buscar..." class="buscador">
+            <a href="micuenta.html" class="icono-cuenta">
+                <i class="fas fa-user"></i> Ingresar
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="grid-container">
+            <div class="logo">
+                <h1>OESTECH</h1>
+            </div>
+            <nav class="menu">
+                <ul class="flex-menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <!-- <li>
+                        <a href="./categorias.html">Categorías</a>
+                        <ul class="submenu">
+                            <li><a href="#">Gadgets</a></li>
+                            <li><a href="#">Geek</a></li>
+                            <li><a href="#">Oficina Tech</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./micuenta.html">Mi Cuenta</a></li>
+                    <li><a href="./Contacto.html">Contacto</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Secciones -->
+    <main class="main">
+
+        <section class="hero">
+            <h1 class="estilosTitulos">Bienvenido a la tienda del futuro</h1>
+            <p>Gadgets, tecnología y cultura geek en un solo lugar</p>
+            <button>Explorar productos</button>
+        </section>
+
+        <section>
+            <h2 class="estilosTitulos">Presentación</h2>
+            <div class="video-container">
+                <video controls muted autoplay loop>
+                    <source
+                        src="./video/Technology Background Template 1080_Copyright free _Intro template Full HD with sound_Free video.mp4"
+                        type="video/mp4">
+                    <track src="" kind="subtitles" srclang="es" label="Español" default>
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </section>
+
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros">
+            <h2 class="estilosTitulos">Sobre Nosotros</h2>
+            <p class="parrafoCentrado">Somos una tienda apasionada por la tecnología, los gadgets innovadores y la
+                cultura geek. Nuestra
+                misión es acercarte lo último en entretenimiento y estilo de vida digital.</p>
+        </section>
+
+        <!-- Sección Productos -->
+        <section id="productos">
+            <h2 class="estilosTitulos">Productos Destacados</h2>
+            <div class="grid-productos">
+                <div class="card-producto" data-categoria="PC Gaming">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_918624-MLA75141289159_032024-O.webp"
+                        alt="Producto 1" />
+                    <h3>Sable láser RGB</h3>
+                    <p>Ideal para fans de Star Wars. Iluminación personalizada y sonidos realistas.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card-producto" data-categoria="Notebooks">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_630002-MLU54963956328_042023-O.webp"
+                        alt="Producto 2" />
+                    <h3>Funko Pop edición limitada</h3>
+                    <p>Coleccionables exclusivos de tus personajes favoritos.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card-producto" data-categoria="Accesorios">
+                    <img src="https://www.megatone.net/images/Articulos/zoom2x/350/MKT0095TRG-1.jpg" alt="Producto 3" />
+                    <h3>Auriculares gamer</h3>
+                    <p>Sonido envolvente 7.1, micrófono con cancelación de ruido.</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card-producto" data-categoria="geek">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_642136-MLA54784705882_042023-O.webp" alt="Taza térmica de Hogwarts" />
+                    <h3>Taza térmica de Hogwarts</h3>
+                    <p>Revela los escudos de las casas con líquidos calientes. Mágica.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card-producto" data-categoria="geek">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_926943-MLA70507579092_072023-O.webp" alt="Reloj despertador con forma de control" />
+                    <h3>Despertador control retro</h3>
+                    <p>Ideal para gamers nostálgicos. Diseño inspirado en mandos clásicos.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card-producto" data-categoria="geek">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_969833-MLA69258090491_052023-O.webp" alt="Almohadón de Pac-Man" />
+                    <h3>Almohadón Pac-Man</h3>
+                    <p>Decorá tu espacio gamer con un clásico del arcade. Suave y divertido.</p>
+                    <button>Comprar</button>
+                </div>
+                
+                <div class="card-producto" data-categoria="gadgets">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_935529-MLA72067143888_102023-O.webp" alt="Mini proyector portátil" />
+                    <h3>Mini proyector portátil</h3>
+                    <p>Proyecta tus series o juegos desde el celular en cualquier superficie.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card-producto" data-categoria="gadgets">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_883191-MLA53279804553_012023-O.webp" alt="Lámpara LED táctil" />
+                    <h3>Lámpara LED táctil</h3>
+                    <p>Luz regulable ideal para escritorio. Activación táctil y carga USB.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card-producto" data-categoria="gadgets">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_928911-MLA72111119126_102023-O.webp" alt="Soporte flexible para celular" />
+                    <h3>Soporte flexible para celular</h3>
+                    <p>Perfecto para ver contenido sin usar las manos. Ajustable y giratorio.</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card-producto" data-categoria="gadgets">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_928911-MLA72111119126_102023-O.webp" alt="Soporte flexible para celular" />
+                    <h3>Soporte flexible para celular</h3>
+                    <p>Perfecto para ver contenido sin usar las manos. Ajustable y giratorio.</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card-producto" data-categoria="gadgets">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_928911-MLA72111119126_102023-O.webp" alt="Soporte flexible para celular" />
+                    <h3>Soporte flexible para celular</h3>
+                    <p>Perfecto para ver contenido sin usar las manos. Ajustable y giratorio.</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card-producto" data-categoria="gadgets">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_928911-MLA72111119126_102023-O.webp" alt="Soporte flexible para celular" />
+                    <h3>Soporte flexible para celular</h3>
+                    <p>Perfecto para ver contenido sin usar las manos. Ajustable y giratorio.</p>
+                    <button>Comprar</button>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- Seccion Categorias -->
+        <section class="categories-section">
+            <h2>Categorías</h2>
+            <div class="categories">
+                <div class="category-card">
+                    <img src="./img/pcgaming.jpg" alt="PC Gaming">
+                    <h3>PC Gaming</h3>
+                    <p>Todo para jugar al máximo nivel.</p>
+                </div>
+                <div class="category-card">
+                    <img src="./img/notebooks.jpg" alt="Notebooks">
+                    <h3>Notebooks</h3>
+                    <p>Trabajo, estudio y movilidad.</p>
+                </div>
+                <div class="category-card">
+                    <img src="./img/accesorios.jpg" alt="Accesorios">
+                    <h3>Accesorios</h3>
+                    <p>Teclados, mouse, headsets, almacenamiento y más.</p>
+                </div>
+                <div class="category-card">
+                    <img src="./img/gadget.jpg" alt="Gadgets">
+                    <h3>Gadgets</h3>
+                    <p>Relojes, cámaras, mochilas, fundas, lamparas, guantes y más.</p>
+                </div>
+                <div class="category-card">
+                    <img src="./img/geek.jpg" alt="Geek">
+                    <h3>Geek</h3>
+                    <p>Cómics, manga, anime, videojuegos y coleccionables de todo tipo..</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Reseñas -->
+        <section class="opiniones">
+            <h2>Lo que opinan nuestros clientes</h2>
+            <div class="cards-opiniones">
+                <div class="card-opinion">
+                    <img src="./img/stefan.jpg" alt="Cliente 1" class="foto-perfil">
+                    <h3>Sofía R.</h3>
+                    <p>"Excelente atención y productos de primera. ¡Volveré sin dudas!"</p>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="card-opinion">
+                    <img src="./img/martin.jpg" alt="Cliente 2" class="foto-perfil">
+                    <h3>Martin S.</h3>
+                    <p>"Rápido envío y muy buena calidad. Me encantó la experiencia."</p>
+                    <div class="estrellas">⭐⭐⭐⭐</div>
+                </div>
+                <div class="card-opinion">
+                    <img src="./img/lucas.jpg" alt="Cliente 3" class="foto-perfil">
+                    <h3>Lucas M.</h3>
+                    <p>"Fácil de comprar y productos súper originales. ¡Recomendado!"</p>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seccion Visitanos -->
+        <section>
+            <h2 class="estilosTitulos">Visitanos</h2>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.89180772496!2d-58.37547758836072!3d-34.60689725755398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb000d59abc7%3A0x8683324ec9cd36ea!2sMicrocentro!5e0!3m2!1sen!2sar!4v1746800166121!5m2!1sen!2sar"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Seccion Contacto  -->
+        <section>
+            <h1 class="estilosTitulos">Contactos</h1>
+            <h2 class="estilosTitulos">Formulario de Contacto</h2>
+            <div>
+                <form action="https://formspree.io/f/mblollow" method="POST">
+                    <div>
+                        <label>
+                            Your name:
+                            <input type="name" name="name" required />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Your email:
+                            <input type="email" name="email" required />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Your message:
+                            <textarea name="message"></textarea>
+                        </label>
+                    </div>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-social">
+                <h4>SEGUINOS EN</h4>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <div class="footer-section">
+                <h4>NOSOTROS</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Locales</a></li>
+                    <li><a href="#">Servicio Técnico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>CORPORATIVO</h4>
+                <ul>
+                    <li><a href="#">Venta Corporativa</a></li>
+                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Botón de Arrepentimiento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>NEWSLETTER</h4>
+                <form>
+                    <input type="email" placeholder="Email" />
+                    <button type="submit">ENVIAR!</button>
+                </form>
+                <div class="captcha-mock">[ CAPTCHA ]</div>
+            </div>
+        </div>
+
+        <div class="footer-mid">
+            <div>
+                <h4>COMPRAS ONLINE</h4>
+                <p>Lunes a Viernes de 10 a 18 hs</p>
+                <p><i class="fab fa-whatsapp"></i> 11-6624-8428</p>
+                <p><i class="fas fa-envelope"></i> ventas@oestech.com</p>
+                <button class="info-btn">INFO SOBRE ENVIOS</button>
+            </div>
+            <div>
+                <h4>SERVICIO TÉCNICO</h4>
+                <p>Lunes a Viernes de 9 a 18 hs</p>
+                <p>Villa Urquiza-CABA</p>
+                <button class="info-btn">+ INFO</button>
+            </div>
+            <div>
+                <h4>NUESTROS LOCALES</h4>
+                <p>Caballito · Flores · Microcentro · Tribunales</p>
+                <p>DOT Baires · San Justo · Tortugas Open Mall</p>
+                <button class="info-btn">+ INFO</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="pagos">
+                <a href="./tienda.html"><img src="./img/mediosdepago.png" alt="bannermediosdepago"></a>
+            </div>
+            <p>© OESTECH 2025 | Todos los derechos reservados.</p>
+            <small>Los precios expresados incluyen IVA. Las imágenes son a modo ilustrativo. Sujeto a stock y cambios
+                sin previo aviso.</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
