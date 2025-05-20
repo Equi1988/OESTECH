@@ -451,7 +451,7 @@ form button:hover {
 button {
     background: transparent;
     border: 2px solid #00ffe1;
-    color: #00ffe1;
+    color: black;
     padding: 10px 20px;
     font-family: 'Orbitron', sans-serif;
     cursor: pointer;
