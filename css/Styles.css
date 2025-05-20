@@ -408,7 +408,7 @@ form {
 form label {
     font-weight: bold;
     color: #00ffcc;
-    font-family: var(--font-principal);
+    font-family: 'Orbitron', sans-serif;
     margin-bottom: 0.5rem;
     display: block;
 }
@@ -450,16 +450,16 @@ form button:hover {
 /* Botón general */
 button {
     background: transparent;
-    border: 2px solid var(--color-acento);
-    color: var(--color-texto);
+    border: 2px solid #00ffe1;
+    color: #00ffe1;
     padding: 10px 20px;
-    font-family: var(--font-principal);
+    font-family: 'Orbitron', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background: var(--color-acento);
+    background: #00ffe1;
     color: #000;
 }
 
@@ -639,7 +639,6 @@ button:hover {
 }
 
 
-
 /* Responsive */
 @media (max-width: 768px) {
     header {
@@ -658,5 +657,42 @@ button:hover {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topbar-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+
+    .topbar-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .flex-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .buscador {
+        width: 100%;
     }
 }
