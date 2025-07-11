@@ -36,10 +36,23 @@
             <li><a href="#"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
         </ul>
         <div class="topbar-right">
-            <input type="text" placeholder="Buscar..." class="buscador">
-            <a href="micuenta.html" class="icono-cuenta">
-                <i class="fas fa-user"></i> Ingresar
-            </a>
+            <div class="cuenta-dropdown">
+                <div class="cuenta-icono" onclick="toggleDropdown()">
+                    <i class="fas fa-user"></i>
+                    <div class="cuenta-texto">
+                        <span>Ingresar</span><br />
+                        <strong>Cuenta</strong> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+                <div class="cuenta-formulario" id="dropdownForm">
+                    <input type="email" placeholder="Usuario (email)" />
+                    <input type="password" placeholder="Contraseña" />
+                    <button class="btn-ingresar">INGRESAR</button>
+                    <a href="#" class="olvide">Olvidé mi Clave</a>
+                    <button class="btn-crear">Crear nueva cuenta</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -64,15 +77,24 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="barra-promociones">
+        <div class="promociones-contenido">
+            <span><i class="fas fa-percentage"></i>20% OFF en transferencias</span>
+            <span><i class="fas fa-credit-card"></i>6 cuotas sin interés</span>
+            <span><i class="fas fa-gift"></i>Envío gratis desde $15.000</span>
+            <span><i class="fas fa-shield-alt"></i>Compra segura garantizada</span>
+        </div>
+    </div>
+
+
     <!-- Main Secciones -->
     <main class="main">
-
         <section class="hero">
             <h1 class="estilosTitulos">Bienvenido a la tienda del futuro</h1>
             <p>Gadgets, tecnología y cultura geek en un solo lugar</p>
@@ -92,6 +114,29 @@
             </div>
         </section>
 
+        <section class="banner-marcas">
+            <div class="beneficios">
+                <div class="beneficio">
+                    <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Tarjeta crédito" />
+                    <p><strong>3 y 6 cuotas sin interés</strong><br>en todos los productos</p>
+                </div>
+                <div class="beneficio">
+                    <img src="https://http2.mlstatic.com/frontend-assets/mp-logo-mp.svg" alt="Mercado Pago" />
+                    <p><strong>Promos con bancos</strong><br>Crédito, débito, efectivo</p>
+                </div>
+            </div>
+
+            <div class="marcas">
+                <img src="./img/amazon.png" alt="Amazon" />
+                <img src="./img/samsung.png" alt="Samsung" />
+                <img src="./img/sony.png" alt="Sony" />
+                <img src="./img/marcas/ps4.png" alt="PS4" />
+                <img src="./img/ps5.png" alt="PS5" />
+                <img src="./img/marcas/xbox.png" alt="Xbox" />
+                <img src="./img/marcas/nintendo.png" alt="Nintendo Switch" />
+            </div>
+        </section>
+
 
         <!-- Sección Nosotros -->
         <section id="nosotros">
@@ -104,89 +149,8 @@
         <!-- Sección Productos -->
         <section id="productos">
             <h2 class="estilosTitulos">Productos Destacados</h2>
-            <div class="grid-productos">
-                <div class="card-producto" data-categoria="PC Gaming">
-                    <img src="./img/Amd Ryzen 7 Ram 32gb.png"
-                        alt="Producto 1" />
-                    <h3>Amd Ryzen 7 Ram 32gb</h3>
-                    <p>Ideal para los entusiastas de los videojuegos y tareas exigentes.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card-producto" data-categoria="PC Gaming">
-                    <img src="./img/Pc Armada Intel Core I3 10100.png"
-                        alt="Producto 2" />
-                    <h3>Pc Armada Intel Core I3 10100</h3>
-                    <p>Para arrancar a Jugar</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card-producto" data-categoria="PC Gaming">
-                    <img src="./img/Amd Ryzen 5.png" alt="Producto 3" />
-                    <h3>Amd Ryzen 5</h3>
-                    <p>Aumenta tu rendimiento y juega al maximo.</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="card-producto" data-categoria="Accesorios">
-                    <img src="./img/teclado.png" alt="Teclado bluetooth Logitech" />
-                    <h3>Teclado bluetooth Logitech</h3>
-                    <p>Innovadores en diseño y tecnología, Logitech se encarga de brindar la mejor experiencia de uso para sus usuario.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card-producto" data-categoria="Accesorios">
-                    <img src="./img/discoexterno.png" alt="Western Digital WD Elements Portable" />
-                    <h3>Western Digital WD Elements Portable</h3>
-                    <p>Lleva tus archivos a donde quieras con el disco duro externo Western Digital WD Elements Portable WDBUZG0010BBK de 1TB en color negro.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card-producto" data-categoria="Notebooks">
-                    <img src="./img/macbook.png" alt="MacBook Air M2" />
-                    <h3>MacBook Air M2</h3>
-                    <p>MacBook Air M2 (2022) 13.6" color starlight 256GB SSD - Apple M.</p>
-                    <button>Comprar</button>
-                </div>
-                
-                <div class="card-producto" data-categoria="gadgets">
-                    <img src="./img/miniproyector.png" alt="Mini proyector portátil" />
-                    <h3>Mini proyector portátil</h3>
-                    <p>Proyecta tus series o juegos desde el celular en cualquier superficie.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card-producto" data-categoria="gadgets">
-                    <img src="./img/lamparatactil.png" alt="Lámpara LED táctil" />
-                    <h3>Lámpara LED táctil</h3>
-                    <p>Luz regulable ideal para escritorio. Activación táctil y carga USB.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card-producto" data-categoria="gadgets">
-                    <img src="./img/soporte.png" alt="Soporte flexible para celular" />
-                    <h3>Soporte flexible para celular</h3>
-                    <p>Perfecto para ver contenido sin usar las manos. Ajustable y giratorio.</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="card-producto" data-categoria="geek">
-                    <img src="./img/tazamagica.png" alt="Taza Mágica Geek" />
-                    <h3>Taza Mágica Geek</h3>
-                    <p>Taza Mágica Geek Retro Mario Bros Termosensible.</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="card-producto" data-categoria="geek">
-                    <img src="./img/comics.png" alt="El Eternauta" />
-                    <h3>El Eternauta</h3>
-                    <p>El Eternauta es la primera novela gráfica en español y la más relevante para el mundo hispanoamericano.</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="card-producto" data-categoria="geek">
-                    <img src="./img/marvel.png" alt="Marvel" />
-                    <h3>Soporte flexible para celular</h3>
-                    <p>Marvel La Enciclopedia, de Stan Lee.</p>
-                    <button>Comprar</button>
-                </div>
-                
-
-            </div>
+            <div id="productos-container" class="grid-productos"></div>
+            <div id="snackbar">Producto agregado al carrito</div>
         </section>
 
         <!-- Seccion Categorias -->
@@ -363,6 +327,9 @@
                 sin previo aviso.</small>
         </div>
     </footer>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/carrito.js"></script>
 
 </body>
 

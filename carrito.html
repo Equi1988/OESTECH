@@ -21,10 +21,10 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/StylesMiCuenta.css">
+    <link rel="stylesheet" href="./css/StylesCarrito.css">
 
     <link rel="stylesheet" href="./css/Styles.css">
-    <title>Mi Cuenta</title>
+    <title>Carrito</title>
 </head>
 
 <body>
@@ -79,65 +79,23 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html"> <span id="contador-carrito" class="contador-carrito">0</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Main Secciones -->
+
     <main class="main">
-        <section class="mi-cuenta">
-            <!-- LOGIN -->
-            <div id="login-section">
-                <h2>Iniciar sesión</h2>
-                <form id="login-form">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Tu email" required>
 
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Tu contraseña" required>
-
-                    <button type="submit">Entrar</button>
-                </form>
-
-                <p class="registro-link">
-                    ¿No tenés cuenta? <a href="#" onclick="mostrarRegistro()">Registrate acá</a>
-                </p>
-            </div>
-
-            <!-- REGISTRO -->
-            <div id="registro-section" style="display: none;">
-                <h2>Crear cuenta</h2>
-                <form id="registro-form">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Tu email" required>
-
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Creá una contraseña" required>
-
-                    <button type="submit">Registrarme</button>
-                </form>
-
-                <p class="registro-link">
-                    ¿Ya tenés cuenta? <a href="#" onclick="mostrarLogin()">Iniciá sesión</a>
-                </p>
-            </div>
-
-            <!-- PANEL DEL USUARIO LOGUEADO -->
-            <div id="user-panel" style="display: none;">
-                <h2>Mi Cuenta</h2>
-                <p>Bienvenido/a, <span id="nombreUsuario"></span></p>
-                <ul>
-                    <li><a href="#">Mis pedidos</a></li>
-                    <li><a href="#">Mis datos</a></li>
-                    <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
-                </ul>
-            </div>
-        </section>
+        <div class="carritoCompras"></div>
+        <div id="snackbar">Compra Finalizada</div>
 
 
     </main>
+
     <!-- Footer -->
 
     <footer class="footer">
@@ -209,8 +167,8 @@
                 sin previo aviso.</small>
         </div>
     </footer>
-    
-        <script src="./js/products.js"></script>
+
+    <script src="./js/products.js"></script>
     <script src="./js/carrito.js"></script>
 
 </body>

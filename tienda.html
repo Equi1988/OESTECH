@@ -36,13 +36,26 @@
             <li><a href="#"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
         </ul>
         <div class="topbar-right">
-            <input type="text" placeholder="Buscar..." class="buscador">
-            <a href="./micuenta.html" class="icono-cuenta">
-                <i class="fas fa-user"></i> Ingresar
-            </a>
+            <div class="cuenta-dropdown">
+                <div class="cuenta-icono" onclick="toggleDropdown()">
+                    <i class="fas fa-user"></i>
+                    <div class="cuenta-texto">
+                        <span>Ingresar</span><br />
+                        <strong>Cuenta</strong> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+                <div class="cuenta-formulario" id="dropdownForm">
+                    <input type="email" placeholder="Usuario (email)" />
+                    <input type="password" placeholder="Contraseña" />
+                    <button class="btn-ingresar">INGRESAR</button>
+                    <a href="#" class="olvide">Olvidé mi Clave</a>
+                    <button class="btn-crear">Crear nueva cuenta</button>
+                </div>
+            </div>
         </div>
     </div>
-
+    
     <!-- Header -->
     <header class="header">
         <div class="grid-container">
@@ -64,16 +77,42 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="barra-promociones">
+        <div class="promociones-contenido">
+            <span><i class="fas fa-percentage"></i>20% OFF en transferencias</span>
+            <span><i class="fas fa-credit-card"></i>6 cuotas sin interés</span>
+            <span><i class="fas fa-gift"></i>Envío gratis desde $15.000</span>
+            <span><i class="fas fa-shield-alt"></i>Compra segura garantizada</span>
+        </div>
+    </div>
+
     <!-- Main Secciones -->
     <main class="main">
-        <h2 class="estilosTitulos">Tienda</h2>
-        <p class="parrafoCentrado">Proximamente estara disponible la seccion de todos los productos</p>
+        <section class="tienda">
+            <h2 class="titulo-seccion">Tienda</h2>
+
+            <div class="filtros-tienda">
+                <input type="text" placeholder="Buscar productos..." id="buscador" />
+                <select id="filtroCategoria">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="geek">Geek</option>
+                    <option value="gadgets">Gadgets</option>
+                    <option value="oficina">Oficina Tech</option>
+                </select>
+            </div>
+
+            <div class="grid-productos" id="listaProductos">
+                <div id="productos-container" class="grid-productos"></div>
+                <div id="snackbar">Producto agregado al carrito</div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -140,13 +179,18 @@
         </div>
         <div class="footer-bottom">
             <div class="pagos">
-                <a href="./tienda.html"><img src="./img/mediosdepago.png" alt="bannermediosdepago"></a>                
+                <a href="./tienda.html"><img src="./img/mediosdepago.png" alt="bannermediosdepago"></a>
             </div>
             <p>© OESTECH 2025 | Todos los derechos reservados.</p>
             <small>Los precios expresados incluyen IVA. Las imágenes son a modo ilustrativo. Sujeto a stock y cambios
                 sin previo aviso.</small>
         </div>
     </footer>
+
+    
+    <script src="./js/products.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/tienda.js"></script>
 
 </body>
 

@@ -38,10 +38,23 @@
             <li><a href="#"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
         </ul>
         <div class="topbar-right">
-            <input type="text" placeholder="Buscar..." class="buscador">
-            <a href="./micuenta.html" class="icono-cuenta">
-                <i class="fas fa-user"></i> Ingresar
-            </a>
+            <div class="cuenta-dropdown">
+                <div class="cuenta-icono" onclick="toggleDropdown()">
+                    <i class="fas fa-user"></i>
+                    <div class="cuenta-texto">
+                        <span>Ingresar</span><br />
+                        <strong>Cuenta</strong> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+                <div class="cuenta-formulario" id="dropdownForm">
+                    <input type="email" placeholder="Usuario (email)" />
+                    <input type="password" placeholder="Contraseña" />
+                    <button class="btn-ingresar">INGRESAR</button>
+                    <a href="#" class="olvide">Olvidé mi Clave</a>
+                    <button class="btn-crear">Crear nueva cuenta</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -66,7 +79,7 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -164,6 +177,9 @@
                 sin previo aviso.</small>
         </div>
     </footer>
+
+        <script src="./js/products.js"></script>
+    <script src="./js/carrito.js"></script>
 
 </body>
 
