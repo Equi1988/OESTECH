@@ -1,0 +1,47 @@
+.venta-corporativa {
+    background-color: #111;
+    color: #0ff; /* celeste neón */
+    font-family: 'Orbitron', sans-serif;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0ff2;
+    margin: 2rem;
+    max-width: 800px;
+}
+
+.venta-corporativa h2 {
+    color: #0ff;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #0ff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.venta-corporativa .subenlaces {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.venta-corporativa .atencion {
+    color: #ff004c;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.venta-corporativa a {
+    color: #0ff;
+    text-decoration: underline;
+}
+
+.venta-corporativa ul.datos {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: #fff;
+}
+
+.venta-corporativa p {
+    color: #eee;
+    line-height: 1.6;
+    margin-top: 1rem;
+}

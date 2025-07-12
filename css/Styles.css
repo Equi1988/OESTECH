@@ -111,6 +111,18 @@
     color: #000;
 }
 
+@media (max-width: 600px) {
+    .cuenta-formulario {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 350px;
+        z-index: 9999;
+    }
+}
+
 
 /* Body */
 body {
@@ -451,6 +463,7 @@ section {
 }
 
 .card-producto h3 {
+    color: #000;
     margin: 0.5rem 0 0.25rem;
 }
 

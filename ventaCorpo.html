@@ -21,11 +21,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/StylesMiCuenta.css">
+    <link rel="stylesheet" href="./css/StylesVentaCorpo.css">
 
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="icon" href="./img/iconoOestch.png" type="image/x-icon">
-    <title>Mi Cuenta</title>
+    <title>OESTECH - Venta Corporativa</title>
 </head>
 
 <body>
@@ -79,81 +79,73 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html"> <span id="contador-carrito" class="contador-carrito">0</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Secciones -->
-    <main class="main">
-        <section class="mi-cuenta">
-            <!-- LOGIN -->
-            <div id="login-section">
-                <h2>Iniciar sesión</h2>
-                <form id="login-form">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Tu email" required>
+    <div class="barra-promociones">
+        <div class="promociones-contenido">
+            <span><i class="fas fa-percentage"></i>20% OFF en transferencias</span>
+            <span><i class="fas fa-credit-card"></i>6 cuotas sin interés</span>
+            <span><i class="fas fa-gift"></i>Envío gratis desde $15.000</span>
+            <span><i class="fas fa-shield-alt"></i>Compra segura garantizada</span>
+        </div>
+    </div>
 
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Tu contraseña" required>
 
-                    <button type="submit">Entrar</button>
-                </form>
 
-                <p class="registro-link">
-                    ¿No tenés cuenta? <a href="#" onclick="mostrarRegistro()">Registrate acá</a>
-                </p>
-            </div>
+    <main>
 
-            <!-- REGISTRO -->
-            <div id="registro-section" style="display: none;">
-                <h2>Crear cuenta</h2>
-                <form id="registro-form">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Tu email" required>
+<section class="venta-corporativa">
+    <h2>VENTA CORPORATIVA</h2>
+    <p class="subenlaces">Venta a empresas | Regalos Empresariales | PCs Armadas</p>
 
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Creá una contraseña" required>
+    <h3 class="atencion">⚠️ ATENCIÓN: NO ES VENTA MAYORISTA. LEER ATENTAMENTE!</h3>
+    <p>
+        Atención personalizada para clientes-empresa, descuentos especiales y asesoramiento e información sobre productos de nuestro catálogo.<br>
+        CD Market puede abastecer la demanda de productos en cantidad, para regalos empresariales, promociones o acciones de marketing.
+    </p>
+    <p>¿Cómo comunicarse con nosotros? Fácil, envianos un mail a 
+        <a href="mailto:mlrodriguez@memotec.com.ar">mlrodriguez@memotec.com.ar</a> o a 
+        <a href="mailto:ventascorporativas@cdmarket.com.ar">ventascorporativas@cdmarket.com.ar</a> con los siguientes datos:
+    </p>
 
-                    <button type="submit">Registrarme</button>
-                </form>
+    <ul class="datos">
+        <li>Nombre y Apellido:</li>
+        <li>Empresa:</li>
+        <li>CUIT:</li>
+        <li>Producto o Categoría de Producto de interés:</li>
+        <li>Total aprox. de unidades (ej: 50 pendrives):</li>
+        <li>Teléfono:</li>
+    </ul>
 
-                <p class="registro-link">
-                    ¿Ya tenés cuenta? <a href="#" onclick="mostrarLogin()">Iniciá sesión</a>
-                </p>
-            </div>
+    <p>⏱️ Te responderemos entre las siguientes 48 horas.</p>
+    <p>📬 ¡Esperamos tu contacto!</p>
+</section>
 
-            <!-- PANEL DEL USUARIO LOGUEADO -->
-            <div id="user-panel" style="display: none;">
-                <h2>Mi Cuenta</h2>
-                <p>Bienvenido/a, <span id="nombreUsuario"></span></p>
-                <ul>
-                    <li><a href="#">Mis pedidos</a></li>
-                    <li><a href="#">Mis datos</a></li>
-                    <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
-                </ul>
-            </div>
-        </section>
 
 
     </main>
+
     <!-- Footer -->
 
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-social">
                 <h4>SEGUINOS EN</h4>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
             </div>
 
             <div class="footer-section">
                 <h4>NOSOTROS</h4>
                 <ul>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./Contacto.html">Contacto</a></li>
                     <li><a href="#">Locales</a></li>
                     <li><a href="#">Servicio Técnico</a></li>
                 </ul>
@@ -200,6 +192,7 @@
                 <button class="info-btn">+ INFO</button>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="pagos">
                 <a href="./tienda.html"><img src="./img/mediosdepago.png" alt="bannermediosdepago"></a>
@@ -209,10 +202,11 @@
                 sin previo aviso.</small>
         </div>
     </footer>
-    
-        <script src="./js/products.js"></script>
+
+    <script src="./js/products.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/tienda.js"></script>
+
 
 </body>
 

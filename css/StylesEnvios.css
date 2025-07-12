@@ -1,0 +1,84 @@
+.envios-section-dark {
+    background-color: #111;
+    color: #fff;
+    padding: 3rem 2rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.envios-container-dark {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+.envios-img-dark {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.envios-img-dark img {
+    width: 140px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 8px cyan);
+}
+
+.envios-img-dark h2 {
+    font-size: 2rem;
+    color: #00ffc3;
+}
+
+.envios-detalles-dark {
+    flex: 2 1 600px;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00ffc3;
+}
+
+.envios-detalles-dark h3 {
+    color: #00ffc3;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.envios-detalles-dark span {
+    color: #ccc;
+    font-weight: 300;
+}
+
+.envios-detalles-dark .plazo {
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.envios-detalles-dark ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.envios-detalles-dark li {
+    margin-bottom: 0.3rem;
+}
+
+.rojo {
+    color: #ff3c3c;
+    font-weight: bold;
+}
+
+.neon-text {
+    color: #00ffc3;
+    text-shadow: 0 0 5px #00ffc3;
+}
+
+.neon-highlight {
+    color: #fff;
+    text-shadow: 0 0 5px #00ffc3;
+}
+
+.contacto {
+    margin-top: 1rem;
+    font-size: 1rem;
+}

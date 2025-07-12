@@ -93,6 +93,26 @@ document.addEventListener("click", function (e) {
 // AGREGAR PRODUCTO AL CARRITO
 // ==========================
 
+function agregarProductoAlCarrito(idProducto) {
+    
+    const productoExistente = carrito.find(p => p.id === idProducto);
+    if (productoExistente) {
+        productoExistente.cantidad++;
+    } else {
+        const producto = productos.find(p => p.id === idProducto);
+        if (producto) {
+            carrito.push({ ...producto, cantidad: 1 });
+        }
+    }
+
+    // ✅ Guardar el carrito aunque no haya HTML visible
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    // ✅ Esto solo actualiza el DOM si el contenedor existe (por ejemplo, en carrito.html)
+    actualizarCarritoHTML();
+    mostrarSnackbar();
+}
+
 function mostrarSnackbar(mensaje = "Producto agregado al carrito") {
     const snackbar = document.getElementById("snackbar");
 
@@ -115,48 +135,53 @@ function mostrarSnackbar(mensaje = "Producto agregado al carrito") {
     }, 2500);
 }
 
-
-function agregarProductoAlCarrito(idProducto) {
-    const productoExistente = carrito.find(p => p.id === idProducto);
-    if (productoExistente) {
-        productoExistente.cantidad++;
-    } else {
-        const producto = productos.find(p => p.id === idProducto);
-        if (producto) {
-            carrito.push({ ...producto, cantidad: 1 });
-        }
-    }
-
-    // ✅ Guardar el carrito aunque no haya HTML visible
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-
-    // ✅ Esto solo actualiza el DOM si el contenedor existe (por ejemplo, en carrito.html)
-    actualizarCarritoHTML();
-    mostrarSnackbar();
-}
-
-
 // ==========================
 // MANEJAR BOTONES EN EL CARRITO
 // ==========================
+// function manejarClicCarrito(e) {
+//     const btn = e.target;
+//     const id = btn.dataset.id;
+//     const action = btn.dataset.action;
+
+//     if (action === "eliminar") {
+//         carrito = carrito.filter(p => p.id !== id);
+//     } else {
+//         const producto = carrito.find(p => p.id === id);
+//         if (producto) {
+//             if (action === "sumar") {
+//                 producto.cantidad++;
+//             } else if (action === "restar") {
+//                 producto.cantidad--;
+//                 if (producto.cantidad <= 0) {
+//                     carrito = carrito.filter(p => p.id !== id);
+//                 }
+//             }
+//         }
+//     }
+
+//     actualizarCarritoHTML();
+// }
+
 function manejarClicCarrito(e) {
     const btn = e.target;
     const id = btn.dataset.id;
     const action = btn.dataset.action;
 
+    const producto = carrito.find(p => p.id === id);
+    if (!producto) return;
+
     if (action === "eliminar") {
         carrito = carrito.filter(p => p.id !== id);
-    } else {
-        const producto = carrito.find(p => p.id === id);
-        if (producto) {
-            if (action === "sumar") {
-                producto.cantidad++;
-            } else if (action === "restar") {
-                producto.cantidad--;
-                if (producto.cantidad <= 0) {
-                    carrito = carrito.filter(p => p.id !== id);
-                }
-            }
+    } else if (action === "sumar") {
+        if (producto.cantidad < producto.stock) {
+            producto.cantidad++;
+        } else {
+            mostrarSnackbar(`Solo hay ${producto.stock} unidades disponibles de "${producto.titulo}".`);
+        }
+    } else if (action === "restar") {
+        producto.cantidad--;
+        if (producto.cantidad <= 0) {
+            carrito = carrito.filter(p => p.id !== id);
         }
     }
 
@@ -179,6 +204,7 @@ function agregarProductos() {
             <img src="${producto.imagen}" alt="${producto.titulo}">
             <h3>${producto.titulo}</h3>
             <p>${producto.descripcion}</p>
+            <p>${producto.stock}</p>
             <p class="precio">$${producto.precio.toLocaleString()}</p>
             <button class="btn-comprar" data-id="${producto.id}">Agregar a Carrito</button>
         `;

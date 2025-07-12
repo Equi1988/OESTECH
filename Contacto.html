@@ -21,8 +21,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/StylesContacto.css">
+
     <link rel="stylesheet" href="./css/Styles.css">
-    <title>Contacto</title>
+    <link rel="icon" href="./img/iconoOestch.png" type="image/x-icon">
+    <title>OESTECH-Contacto</title>
 </head>
 
 <body>
@@ -30,10 +33,9 @@
     <!-- Barra superior informativa -->
     <div class="topbar">
         <ul class="topbar-links">
-            <li><a href="#"><i class="fas fa-store"></i> Locales</a></li>
-            <li><a href="#"><i class="fas fa-truck"></i> Envíos / Retiros</a></li>
-            <li><a href="#"><i class="fas fa-tools"></i> Servicio Técnico</a></li>
-            <li><a href="#"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
+            <li><a href="./envios.html"><i class="fas fa-truck"></i> Envíos / Retiros</a></li>
+            <li><a href="./servicio.html"><i class="fas fa-tools"></i> Servicio Técnico</a></li>
+            <li><a href="./ventaCorpo.html"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
         </ul>
         <div class="topbar-right">
             <div class="cuenta-dropdown">
@@ -68,16 +70,46 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html"> <span id="contador-carrito" class="contador-carrito">0</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main">
+
+        <h1 class="estilosTitulos">Contactos</h1>
+        <section class="contacto-info-neon">
+            <h3>Consultas por Compras Online</h3>
+            <p><strong>Email:</strong> <a href="mailto:ventasweb@cdmarket.com.ar">ventasweb@cdmarket.com.ar</a></p>
+            <p><strong>Tel:</strong> 011-4861-4816 (Lunes a Viernes de 10 a 18 hs)</p>
+            <p class="nota">*Consultas sobre funcionamiento de la página, ayuda para comprar en el sitio y soporte Post
+                Venta web exclusivamente.</p>
+
+            <p><strong>CVs y empleos:</strong> <a
+                    href="mailto:rrhhcdmarket@cdmarket.com.ar">rrhhcdmarket@cdmarket.com.ar</a></p>
+            <p><strong>Proveedores y propuestas:</strong> <a href="mailto:info@cdmarket.com.ar">info@cdmarket.com.ar</a>
+            </p>
+
+            <p><strong>Locales:</strong> <a href="#">Click acá</a></p>
+
+            <div class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram" />
+                </a>
+            </div>
+        </section>
+
+
+
         <section>
             <section>
-                <h1 class="estilosTitulos">Contactos</h1>
+
                 <h2 class="estilosTitulos">Formulario de Contacto</h2>
                 <div>
                     <form action="https://formspree.io/f/mblollow" method="POST">
@@ -177,9 +209,10 @@
         </div>
     </footer>
 
-        <script src="./js/products.js"></script>
+    <script src="./js/products.js"></script>
     <script src="./js/carrito.js"></script>
-    
+    <script src="./js/tienda.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+.contacto-info-neon {
+  background-color: #111;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #00ffe0;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-info-neon h3 {
+  color: #00ffe0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contacto-info-neon p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.contacto-info-neon a {
+  color: #00ffe0;
+  text-decoration: underline;
+}
+
+.contacto-info-neon .nota {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+.contacto-info-neon .redes-sociales {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contacto-info-neon .redes-sociales img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.contacto-info-neon .redes-sociales img:hover {
+  transform: scale(1.1);
+}

@@ -21,11 +21,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/StylesMiCuenta.css">
+    <link rel="stylesheet" href="./css/StylesEnvios.css">
 
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="icon" href="./img/iconoOestch.png" type="image/x-icon">
-    <title>Mi Cuenta</title>
+    <title>OESTECH - Envios/Retiro</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
     <!-- Barra superior informativa -->
     <div class="topbar">
         <ul class="topbar-links">
-            <li><a href="./envios.html"><i class="fas fa-truck"></i> Envíos / Retiros</a></li>
+            <li><a href="#envios"><i class="fas fa-truck"></i> Envíos / Retiros</a></li>
             <li><a href="./servicio.html"><i class="fas fa-tools"></i> Servicio Técnico</a></li>
             <li><a href="./ventaCorpo.html"><i class="fas fa-briefcase"></i> Ventas Corporativas</a></li>
         </ul>
@@ -79,81 +79,89 @@
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html"> <span id="contador-carrito" class="contador-carrito">0</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Secciones -->
-    <main class="main">
-        <section class="mi-cuenta">
-            <!-- LOGIN -->
-            <div id="login-section">
-                <h2>Iniciar sesión</h2>
-                <form id="login-form">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Tu email" required>
+    <div class="barra-promociones">
+        <div class="promociones-contenido">
+            <span><i class="fas fa-percentage"></i>20% OFF en transferencias</span>
+            <span><i class="fas fa-credit-card"></i>6 cuotas sin interés</span>
+            <span><i class="fas fa-gift"></i>Envío gratis desde $15.000</span>
+            <span><i class="fas fa-shield-alt"></i>Compra segura garantizada</span>
+        </div>
+    </div>
 
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Tu contraseña" required>
 
-                    <button type="submit">Entrar</button>
-                </form>
 
-                <p class="registro-link">
-                    ¿No tenés cuenta? <a href="#" onclick="mostrarRegistro()">Registrate acá</a>
-                </p>
-            </div>
+    <main>
 
-            <!-- REGISTRO -->
-            <div id="registro-section" style="display: none;">
-                <h2>Crear cuenta</h2>
-                <form id="registro-form">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Tu email" required>
+        <section class="envios-section-dark">
+            <div class="envios-container-dark">
+                <div class="envios-img-dark">
+                    
+                    <h2><span class="neon-text">Info sobre</span> <strong class="neon-highlight">Envíos</strong></h2>
+                    <img src="./img/envios.png" alt="Info sobre envíos">
+                </div>
 
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Creá una contraseña" required>
+                <div class="envios-detalles-dark">
+                    <h3>🚚 EnvíoPack <span>[Buenos Aires y resto del país]</span></h3>
+                    <p class="plazo">📦 <span class="rojo">De 3 a 10 días hábiles</span> (aprox. desde acreditado el
+                        pago)</p>
+                    <ul>
+                        <li>• No coordina franjas horarias</li>
+                        <li>• Entrega a domicilio del cliente</li>
+                    </ul>
 
-                    <button type="submit">Registrarme</button>
-                </form>
+                    <h3>🏍 Moto <span>[CABA]</span></h3>
+                    <p class="plazo">📦 <span class="rojo">De 2 a 3 días hábiles</span></p>
+                    <ul>
+                        <li>• Lunes a Viernes de 11 a 18 hs</li>
+                        <li>• Avisamos el día anterior</li>
+                    </ul>
 
-                <p class="registro-link">
-                    ¿Ya tenés cuenta? <a href="#" onclick="mostrarLogin()">Iniciá sesión</a>
-                </p>
-            </div>
+                    <p><strong>Requisitos:</strong></p>
+                    <ul>
+                        <li>- DNI</li>
+                        <li>- Tarjeta física del titular</li>
+                    </ul>
 
-            <!-- PANEL DEL USUARIO LOGUEADO -->
-            <div id="user-panel" style="display: none;">
-                <h2>Mi Cuenta</h2>
-                <p>Bienvenido/a, <span id="nombreUsuario"></span></p>
-                <ul>
-                    <li><a href="#">Mis pedidos</a></li>
-                    <li><a href="#">Mis datos</a></li>
-                    <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
-                </ul>
+                    <h3>🏬 Retiro en sucursal</h3>
+                    <p class="plazo"><span class="rojo">Puede demorar de 3 a 5 días hábiles</span></p>
+                    <p>📩 Se notificará por email cuando esté listo para retirar</p>
+
+                    <p><strong>Contacto:</strong></p>
+                    <p class="contacto">
+                        📱 <span class="neon-text">WhatsApp:</span> <span class="rojo">11-3420-7384</span><br>
+                        ✉️ <span class="neon-text">Email:</span> <span class="rojo">ventasweb@cdmarket.com.ar</span>
+                    </p>
+                </div>
             </div>
         </section>
 
 
+
     </main>
+
     <!-- Footer -->
 
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-social">
                 <h4>SEGUINOS EN</h4>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
             </div>
 
             <div class="footer-section">
                 <h4>NOSOTROS</h4>
                 <ul>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./Contacto.html">Contacto</a></li>
                     <li><a href="#">Locales</a></li>
                     <li><a href="#">Servicio Técnico</a></li>
                 </ul>
@@ -200,6 +208,7 @@
                 <button class="info-btn">+ INFO</button>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="pagos">
                 <a href="./tienda.html"><img src="./img/mediosdepago.png" alt="bannermediosdepago"></a>
@@ -209,10 +218,11 @@
                 sin previo aviso.</small>
         </div>
     </footer>
-    
-        <script src="./js/products.js"></script>
+
+    <script src="./js/products.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/tienda.js"></script>
+
 
 </body>
 

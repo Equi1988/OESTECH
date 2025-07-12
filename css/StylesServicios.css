@@ -1,0 +1,111 @@
+.servicio-tecnico {
+  background-color: #111;
+  color: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00ffe0;
+  max-width: 900px;
+  margin: 3rem auto;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.servicio-tecnico h2 {
+  color: #00ffe0;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.servicio-tecnico h3 {
+  color: #00ffe0;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.servicio-tecnico p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+
+.servicio-tecnico .telefono span {
+  color: #ff4444;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.servicio-tecnico .listado {
+  margin-top: 1.5rem;
+}
+
+.servicio-tecnico .listado h4 {
+  color: #00ffe0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.servicio-tecnico ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.servicio-tecnico ul li {
+  margin-bottom: 0.5rem;
+}
+
+.layout-servicio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-corporativo {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00ffe0;
+  font-family: 'Orbitron', sans-serif;
+  max-width: 250px;
+  flex-shrink: 0;
+}
+
+.menu-corporativo h3 {
+  color: #00ffe0;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #00ffe0;
+  padding-bottom: 0.5rem;
+}
+
+.menu-corporativo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-corporativo ul li {
+  margin: 0.6rem 0;
+}
+
+.menu-corporativo ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-corporativo ul li a:hover {
+  color: #00ffe0;
+  text-decoration: underline;
+}
+
+.servicio-tecnico {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00ffe0;
+}
