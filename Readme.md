@@ -19,25 +19,40 @@
 
 ## 📁 Estructura de Carpetas
 
-    /
-    ├── index.html
-    ├── tienda.html
-    ├── ofertas.html
-    ├── contacto.html
-    ├── servicio-tecnico.html
-    ├── envios.html
-    ├── venta-corporativa.html
-    ├── mi-cuenta.html
-    ├── css/
-    │ └── estilos.css
-    ├── js/
-    │ ├── productos.js
-    │ ├── carrito.js
-    │ └── tienda.js
-    ├── img/
-    │ └── (productos, logos, iconos neon, etc)
-    └── README.md
-
+    📁 proyecto-raíz/
+├── index.html
+├── tienda.html
+├── ofertas.html
+├── contacto.html
+├── servicio-tecnico.html
+├── envios.html
+├── venta-corporativa.html
+├── mi-cuenta.html
+│
+├── css/
+│   ├── Styles.css              # Página principal
+│   ├── Stylestienda.css        # Tienda
+│   ├── StylesOfertas.css       # Ofertas
+│   ├── StylesContacto.css      # Contacto
+│   ├── StylesServicio.css      # Servicio técnico
+│   ├── StylesEnvios.css        # Envíos
+│   ├── StylesVentaCorpo.css    # Venta corporativa
+│   ├── StylesMicuenta.css      # Mi cuenta / login
+│   └── StylesCarrito.css       # Carrito de compras
+│
+├── js/
+│   ├── productos.js
+│   ├── carrito.js
+│   └── tienda.js
+│
+├── img/
+│   ├── productos/
+│   ├── marcas/
+│   ├── iconos/
+│   ├── fondos/
+│   └── logos/
+│
+└── README.md
 
 ---
 

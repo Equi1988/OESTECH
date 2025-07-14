@@ -130,6 +130,7 @@ body {
     color: white;
     font-family: "Inter", sans-serif;
     line-height: 1.6;
+
 }
 
 /* Header */
@@ -288,8 +289,12 @@ main {
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    width: 80%;
-    background: linear-gradient(145deg, #000000, #1f1f1f);
+    width: 90%;
+    background-color: #181818;
+    border: 2px solid #0ff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #00fff2;
+    margin: 2rem auto;
 }
 
 .hero h1 {
@@ -730,6 +735,9 @@ button:hover {
     color: #fff;
     font-family: 'Inter', sans-serif;
     padding: 3rem 2rem 1rem;
+    border: 2px solid #0ff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #00fff2;
 }
 
 .footer a {
@@ -1019,3 +1027,88 @@ button:hover {
         width: 100%;
     }
 }
+
+/* Botón "Volver arriba" */
+/* Botón "Volver arriba" */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    background-color: #00ffe0;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+}
+
+.scroll-top-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #25d366, 0 0 20px #25d366;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #25d366, 0 0 40px #25d366;
+}
+
+.whatsapp-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/* 🌐 RESPONSIVE: Ajustes en pantallas pequeñas */
+@media (max-width: 600px) {
+    .scroll-top-btn {
+        bottom: 80px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .scroll-top-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .whatsapp-btn img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+
+

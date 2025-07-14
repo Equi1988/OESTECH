@@ -1,84 +1,84 @@
 .mi-cuenta {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 30px;
-    background: #1a1a1a;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
-    color: #fff;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  .mi-cuenta h2 {
-    text-align: center;
-    color: #00ffcc;
-    margin-bottom: 20px;
-  }
-  
-  .mi-cuenta form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .mi-cuenta label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .mi-cuenta input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 6px;
-    background-color: #333;
-    color: #fff;
-    font-size: 1rem;
-  }
-  
-  .mi-cuenta button {
-    padding: 12px;
-    background-color: #00ffcc;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .mi-cuenta button:hover {
-    background-color: #00ccaa;
-  }
-  
-  .registro-link {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 0.9rem;
-  }
-  
-  .registro-link a {
-    color: #00ffcc;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  #user-panel ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  #user-panel li {
-    margin: 10px 0;
-  }
-  
-  #user-panel a {
-    color: #00ffcc;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  #user-panel a:hover {
-    text-decoration: underline;
-  }
-  
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1a1a1a;
+  border: 2px solid #0ff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #00fff2;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.mi-cuenta h2 {
+  text-align: center;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.mi-cuenta form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mi-cuenta label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.mi-cuenta input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.mi-cuenta button {
+  padding: 12px;
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mi-cuenta button:hover {
+  background-color: #00ccaa;
+}
+
+.registro-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.registro-link a {
+  color: #00ffcc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#user-panel ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#user-panel li {
+  margin: 10px 0;
+}
+
+#user-panel a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#user-panel a:hover {
+  text-decoration: underline;
+}
