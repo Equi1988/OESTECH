@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gestioná tus pedidos, datos personales y seguimiento de compras desde tu cuenta en OESTECH.">
-      <meta name="keywords" content="cuenta, pedidos, usuario, panel de usuario, OESTECH">
-  <meta name="author" content="OESTECH">
+    <meta name="description"
+        content="Gestioná tus pedidos, datos personales y seguimiento de compras desde tu cuenta en OESTECH.">
+    <meta name="keywords" content="cuenta, pedidos, usuario, panel de usuario, OESTECH">
+    <meta name="author" content="OESTECH">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,22 +72,24 @@
                 <ul class="flex-menu">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./tienda.html">Tienda</a></li>
-                    <!-- <li>
-                        <a href="./categorias.html">Categorías</a>
-                        <ul class="submenu">
-                            <li><a href="#">Gadgets</a></li>
-                            <li><a href="#">Geek</a></li>
-                            <li><a href="#">Oficina Tech</a></li>
-                        </ul>
-                    </li> -->
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="./carrito.html" > <span id="contador-carrito" class="contador-carrito">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="./carrito.html"> <span id="contador-carrito" class="contador-carrito">0</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+        <div class="barra-promociones">
+        <div class="promociones-contenido">
+            <span><i class="fas fa-percentage"></i>20% OFF en transferencias</span>
+            <span><i class="fas fa-credit-card"></i>6 cuotas sin interés</span>
+            <span><i class="fas fa-gift"></i>Envío gratis desde $15.000</span>
+            <span><i class="fas fa-shield-alt"></i>Compra segura garantizada</span>
+        </div>
+    </div>
 
     <!-- Main Secciones -->
     <main class="main">
@@ -147,28 +150,24 @@
         <div class="footer-top">
             <div class="footer-social">
                 <h4>SEGUINOS EN</h4>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
             </div>
 
             <div class="footer-section">
                 <h4>NOSOTROS</h4>
                 <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Locales</a></li>
-                    <li><a href="#">Servicio Técnico</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./Contacto.html">Contacto</a></li>
+                    <li><a href="./servicio.html">Servicio Técnico</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h4>CORPORATIVO</h4>
                 <ul>
-                    <li><a href="#">Venta Corporativa</a></li>
-                    <li><a href="#">Prensa</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Botón de Arrepentimiento</a></li>
+                    <li><a href="./ventaCorpo.html">Venta Corporativa</a></li>
                 </ul>
             </div>
 
@@ -188,21 +187,25 @@
                 <p>Lunes a Viernes de 10 a 18 hs</p>
                 <p><i class="fab fa-whatsapp"></i> 11-6624-8428</p>
                 <p><i class="fas fa-envelope"></i> ventas@oestech.com</p>
-                <button class="info-btn">INFO SOBRE ENVIOS</button>
+                <a href="./envios.html">
+                    <button class="info-btn">+ INFO</button>
+                </a>
             </div>
             <div>
                 <h4>SERVICIO TÉCNICO</h4>
                 <p>Lunes a Viernes de 9 a 18 hs</p>
                 <p>Villa Urquiza-CABA</p>
+                <a href="./servicio.html">
                 <button class="info-btn">+ INFO</button>
+                </a>
             </div>
             <div>
                 <h4>NUESTROS LOCALES</h4>
                 <p>Caballito · Flores · Microcentro · Tribunales</p>
                 <p>DOT Baires · San Justo · Tortugas Open Mall</p>
-                <button class="info-btn">+ INFO</button>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="pagos">
                 <a href="./tienda.html"><img src="./img/mediosdepago.png" alt="bannermediosdepago"></a>
@@ -212,8 +215,9 @@
                 sin previo aviso.</small>
         </div>
     </footer>
-    
-        <script src="./js/products.js"></script>
+
+
+    <script src="./js/products.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/tienda.js"></script>
 

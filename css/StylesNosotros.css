@@ -1,0 +1,68 @@
+body {
+    background-color: #111;
+    font-family: 'Orbitron', sans-serif;
+    color: #eee;
+    /* margin: 0;
+    padding: 2rem; */
+}
+
+.card-neon {
+    background-color: #181818;
+    border: 2px solid #0ff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #00fff2;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.card-neon p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+    color: #00ffd5;
+    text-shadow: 0 0 8px #00ffd5;
+}
+
+.subtitulo {
+    color: #ccc;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.destacado {
+    color: #ff3cac;
+    font-weight: bold;
+}
+
+ul {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+strong {
+    color: #00ffd5;
+}
+
+a {
+    color: #00ffd5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 1rem;
+    }
+}

@@ -79,14 +79,6 @@
                 <ul class="flex-menu">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./tienda.html">Tienda</a></li>
-                    <!-- <li>
-                        <a href="./categorias.html">Categorías</a>
-                        <ul class="submenu">
-                            <li><a href="#">Gadgets</a></li>
-                            <li><a href="#">Geek</a></li>
-                            <li><a href="#">Oficina Tech</a></li>
-                        </ul>
-                    </li> -->
                     <li><a href="./ofertas.html">Ofertas</a></li>
                     <li><a href="./micuenta.html">Mi Cuenta</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
@@ -112,7 +104,13 @@
         <section class="hero">
             <h1 class="estilosTitulos">Bienvenido a la tienda del futuro</h1>
             <p>Gadgets, tecnología y cultura geek en un solo lugar</p>
-            <button>Explorar productos</button>
+
+            <div class="contenedor-boton">
+                <a href="./tienda.html">
+                    <button>Explorar productos</button>
+                </a>
+            </div>
+
         </section>
 
         <section>
@@ -128,28 +126,35 @@
             </div>
         </section>
 
-        <section class="banner-marcas">
-            <div class="beneficios">
-                <div class="beneficio">
-                    <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Tarjeta crédito" />
-                    <p><strong>3 y 6 cuotas sin interés</strong><br>en todos los productos</p>
-                </div>
-                <div class="beneficio">
-                    <img src="https://http2.mlstatic.com/frontend-assets/mp-logo-mp.svg" alt="Mercado Pago" />
-                    <p><strong>Promos con bancos</strong><br>Crédito, débito, efectivo</p>
-                </div>
-            </div>
+        <!-- <section class="banner-marcas">
+  <div class="beneficios">
+    <div class="beneficio">
+      <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Tarjeta crédito" />
+      <div>
+        <strong>3 y 6 cuotas sin interés</strong><br />
+        <span>en todos los productos</span>
+      </div>
+    </div>
+    <div class="beneficio">
+      <img src="./img/mercadopago.png" alt="Mercado Pago" />
+      <div>
+        <strong>Promos con bancos</strong><br />
+        <span>Crédito, débito, efectivo</span>
+      </div>
+    </div>
+  </div>
 
-            <div class="marcas">
-                <img src="./img/amazon.png" alt="Amazon" />
-                <img src="./img/samsung.png" alt="Samsung" />
-                <img src="./img/sony.png" alt="Sony" />
-                <img src="./img/marcas/ps4.png" alt="PS4" />
-                <img src="./img/ps5.png" alt="PS5" />
-                <img src="./img/marcas/xbox.png" alt="Xbox" />
-                <img src="./img/marcas/nintendo.png" alt="Nintendo Switch" />
-            </div>
-        </section>
+  <div class="marcas">
+    <img src="./img/amazon.png" alt="Amazon" />
+    <img src="./img/samsung.png" alt="Samsung" />
+    <img src="./img/sony.png" alt="Sony" />
+    <img src="./img/marcas/ps4.png" alt="PS4" />
+    <img src="./img/ps5.png" alt="PS5" />
+    <img src="./img/marcas/xbox.png" alt="Xbox" />
+    <img src="./img/marcas/nintendo.png" alt="Nintendo Switch" />
+  </div>
+</section> -->
+
 
 
         <!-- Sección Nosotros -->
@@ -158,6 +163,11 @@
             <p class="parrafoCentrado">Somos una tienda apasionada por la tecnología, los gadgets innovadores y la
                 cultura geek. Nuestra
                 misión es acercarte lo último en entretenimiento y estilo de vida digital.</p>
+            <div class="contenedor-boton">
+                <a href="./nosotros.html">
+                    <button>Mas de Nosotros</button>
+                </a>
+            </div>
         </section>
 
         <!-- Sección Productos -->
@@ -283,20 +293,16 @@
             <div class="footer-section">
                 <h4>NOSOTROS</h4>
                 <ul>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="#">Locales</a></li>
-                    <li><a href="#">Servicio Técnico</a></li>
+                    <li><a href="./servicio.html">Servicio Técnico</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h4>CORPORATIVO</h4>
                 <ul>
-                    <li><a href="#">Venta Corporativa</a></li>
-                    <li><a href="#">Prensa</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Botón de Arrepentimiento</a></li>
+                    <li><a href="./ventaCorpo.html">Venta Corporativa</a></li>
                 </ul>
             </div>
 
@@ -316,19 +322,22 @@
                 <p>Lunes a Viernes de 10 a 18 hs</p>
                 <p><i class="fab fa-whatsapp"></i> 11-6624-8428</p>
                 <p><i class="fas fa-envelope"></i> ventas@oestech.com</p>
-                <button class="info-btn">INFO SOBRE ENVIOS</button>
+                <a href="./envios.html">
+                    <button class="info-btn">+ INFO</button>
+                </a>
             </div>
             <div>
                 <h4>SERVICIO TÉCNICO</h4>
                 <p>Lunes a Viernes de 9 a 18 hs</p>
                 <p>Villa Urquiza-CABA</p>
-                <button class="info-btn">+ INFO</button>
+                <a href="./servicio.html">
+                    <button class="info-btn">+ INFO</button>
+                </a>
             </div>
             <div>
                 <h4>NUESTROS LOCALES</h4>
                 <p>Caballito · Flores · Microcentro · Tribunales</p>
                 <p>DOT Baires · San Justo · Tortugas Open Mall</p>
-                <button class="info-btn">+ INFO</button>
             </div>
         </div>
 
