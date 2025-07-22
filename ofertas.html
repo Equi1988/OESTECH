@@ -23,8 +23,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/StylesOfertas.css">
+        <!-- Boots -->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/StylesOfertas.css">
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="icon" href="./img/iconoOestch.png" type="image/x-icon">
     <title>OESTECH - Ofertas</title>
@@ -65,9 +68,10 @@
         <div class="grid-container">
             <div class="logo">
                 <h1>OESTECH</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             </div>
-            <nav class="menu">
-                <ul class="flex-menu">
+            <nav id="menu" class="menu">
+                <ul id="navLinks" class="flex-menu">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./tienda.html">Tienda</a></li>
                     <li><a href="./ofertas.html">Ofertas</a></li>
@@ -77,6 +81,7 @@
                                 class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
+            <div class="overlay" onclick="toggleMenu()"></div>
         </div>
     </header>
 
@@ -195,8 +200,11 @@
 
 
     <script src="./js/products.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/tienda.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 

@@ -233,3 +233,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mostrar carrito (funciona en ambas páginas)
     actualizarCarritoHTML();
 });
+

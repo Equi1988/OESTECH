@@ -67,9 +67,10 @@
         <div class="grid-container">
             <div class="logo">
                 <h1>OESTECH</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             </div>
-            <nav class="menu">
-                <ul class="flex-menu">
+            <nav id="menu" class="menu">
+                <ul id="navLinks" class="flex-menu">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./tienda.html">Tienda</a></li>
                     <li><a href="./ofertas.html">Ofertas</a></li>
@@ -79,6 +80,7 @@
                                 class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
+            <div class="overlay" onclick="toggleMenu()"></div>
         </div>
     </header>
 
@@ -214,6 +216,7 @@
 
 
     <script src="./js/products.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/tienda.js"></script>
 

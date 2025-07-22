@@ -34,6 +34,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="icon" href="./img/iconoOestch.png" type="image/x-icon">
     <title>OESTECH</title>
@@ -74,9 +76,10 @@
         <div class="grid-container">
             <div class="logo">
                 <h1>OESTECH</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             </div>
-            <nav class="menu">
-                <ul class="flex-menu">
+            <nav id="menu" class="menu">
+                <ul id="navLinks" class="flex-menu">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./tienda.html">Tienda</a></li>
                     <li><a href="./ofertas.html">Ofertas</a></li>
@@ -86,6 +89,7 @@
                                 class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
+            <div class="overlay" onclick="toggleMenu()"></div>
         </div>
     </header>
 
@@ -366,6 +370,7 @@
     </footer>
 
     <script src="./js/products.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/tienda.js"></script>
 
